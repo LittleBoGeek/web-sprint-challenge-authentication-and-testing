@@ -26,11 +26,18 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
 
+Json web tokens are a way to transmit info between parties in the form of a json object. JWTs are frequently used for authentication, whereas sessions provide the ability to persist data across requests. Both can be used for authenitcation.
 2. What does `bcrypt` do to help us store passwords in a secure manner.
+
+It allows us to hash passwords and then compare the users password guess to the stored password value without storing the password in plain text.
 
 3. How are unit tests different from integration and end-to-end testing.
 
+Unit tests test much smaller units of code.
+
 4. How _Test Driven Development_ changes the way we write applications and tests.
+
+It helps us to write code smarter because it encourages us to write testable code which in the longrun saves time and money.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -38,18 +45,18 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [ x] Create a forked copy of this project
+- [ x] Add your team lead as collaborator on Github
+- [ x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [ x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [ x] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
 Your finished project must include all of the following requirements:
 
-- [ ] An authentication workflow with functionality for account creation and login implemented inside `/auth/auth-router.js`. A `user` has `username` and `password`. Both properties are required.
+- [ x] An authentication workflow with functionality for account creation and login implemented inside `/auth/auth-router.js`. A `user` has `username` and `password`. Both properties are required.
 - [ ] Middleware used to restrict access to resources for non authenticated requests. Use the file: `./auth/authenticate-middleware.js` as a starting point.
 - [ ] Configuration for running tests using `Jest`.
 - [ ] A **minimum o 2 tests** per API endpoint.
